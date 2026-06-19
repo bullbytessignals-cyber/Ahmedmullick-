@@ -22,9 +22,17 @@ function startReveal() {
 // ─── INTRO / OPENING ANIMATION ───────────────────────────────
 const introOverlay = document.getElementById('introOverlay');
 if (introOverlay) {
-  document.body.style.overflow = 'hidden';
-
-  const dismissIntro = () => {
+  const dismissIntro = (instant) => {
+    sessionStorage.setItem('introSeen', '1');
+    if (instant) {
+      introOverlay.classList.add('gone');
+      document.body.classList.remove('is-intro');
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      startReveal();
+      return;
+    }
     introOverlay.classList.add('exit');
     setTimeout(() => {
       introOverlay.classList.add('gone');
@@ -33,16 +41,21 @@ if (introOverlay) {
       document.body.style.position = '';
       document.body.style.width = '';
       startReveal();
-    }, 850);
+    }, 900);
   };
 
-  const autoTimer = setTimeout(dismissIntro, 2600);
-
-  // Tap/click to skip
-  introOverlay.addEventListener('click', () => {
-    clearTimeout(autoTimer);
-    dismissIntro();
-  });
+  // Skip intro if already seen this browser session
+  if (sessionStorage.getItem('introSeen')) {
+    dismissIntro(true);
+  } else {
+    document.body.style.overflow = 'hidden';
+    const autoTimer = setTimeout(() => dismissIntro(false), 2700);
+    // Tap/click to skip
+    introOverlay.addEventListener('click', () => {
+      clearTimeout(autoTimer);
+      dismissIntro(false);
+    });
+  }
 } else {
   // No intro on inner pages — start reveals immediately
   startReveal();
