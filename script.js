@@ -28,7 +28,10 @@ if (introOverlay) {
     introOverlay.classList.add('exit');
     setTimeout(() => {
       introOverlay.classList.add('gone');
+      document.body.classList.remove('is-intro');
       document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
       startReveal();
     }, 850);
   };
