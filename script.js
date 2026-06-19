@@ -13,7 +13,7 @@ const revealObserver = new IntersectionObserver(
 );
 
 function startReveal() {
-  document.querySelectorAll('.reveal').forEach((el, i) => {
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach((el, i) => {
     el.dataset.delay = i % 8;
     revealObserver.observe(el);
   });
