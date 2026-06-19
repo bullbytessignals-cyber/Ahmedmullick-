@@ -7,32 +7,32 @@
   <meta name="description" content="Ahmad Mullick — Pakistani entrepreneur who grew Airbnb to $300K/year, Race Wars winner, business builder and mentor." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="is-intro">
 
-  <!-- INTRO / OPENING OVERLAY -->
+  <!-- ─── INTRO OVERLAY ─── -->
   <div class="intro-overlay" id="introOverlay">
     <div class="intro-glow"></div>
     <div class="intro-content">
       <div class="intro-logo">AM</div>
       <div class="intro-line"></div>
-      <div class="intro-subtitle">Ahmad Mullick</div>
-      <div class="intro-tagline-small">Entrepreneur · Pakistan 🇵🇰</div>
+      <div class="intro-name">Ahmad Mullick</div>
+      <div class="intro-sub">Entrepreneur · Pakistan 🇵🇰</div>
     </div>
-    <div class="intro-progress"></div>
+    <div class="intro-bar"></div>
   </div>
 
-  <!-- FLOATING WHATSAPP -->
+  <!-- ─── FLOATING WHATSAPP ─── -->
   <div class="whatsapp-float">
-    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
-    <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20to%20know%20more%20about%20your%20services!" target="_blank" class="whatsapp-bubble" aria-label="WhatsApp">
+    <span class="wa-tip">Chat on WhatsApp</span>
+    <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20to%20know%20more%20about%20your%20services!" target="_blank" class="wa-bubble" aria-label="WhatsApp">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
   </div>
 
-  <!-- NAV -->
+  <!-- ─── NAV ─── -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">AM</a>
@@ -42,256 +42,542 @@
         <li><a href="consulting.html">Consulting</a></li>
         <li><a href="shop.html">Shop</a></li>
       </ul>
-      <a href="consulting.html" class="btn btn-primary btn-sm">Work With Me</a>
+      <a href="consulting.html" class="btn btn-gold btn-sm">Work With Me</a>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ─── HERO ─── -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-gradient"></div>
-      <div class="grid-overlay"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-grid-bg"></div>
+
+    <!-- Ghost watermark name -->
+    <div class="hero-name-wrap">
+      <div class="hero-name-bg">AHMAD<br />MULLICK</div>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge reveal">
-        <span class="badge-dot"></span>
-        Pakistan's Top Entrepreneur
-      </div>
-      <h1 class="hero-name reveal">Ahmad<br /><span class="gold">Mullick</span></h1>
-      <p class="hero-tagline reveal">
-        From Zero to <span class="gold">$300K/Year</span> on Airbnb.<br />
-        Building businesses &amp; guiding people across Pakistan 🇵🇰
-      </p>
-      <div class="hero-stats reveal">
-        <div class="stat">
-          <span class="stat-num" data-target="25000">0</span>
-          <span class="stat-label">Followers</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-target="300">0</span><span class="stat-suffix">K</span>
-          <span class="stat-label">$/Year Airbnb</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-target="1">0</span><span class="stat-suffix"> Crore+</span>
-          <span class="stat-label">Deals Cracked</span>
-        </div>
-      </div>
-      <div class="hero-ctas reveal">
-        <a href="consulting.html" class="btn btn-primary btn-lg">Work With Me</a>
-        <a href="about.html" class="btn btn-outline btn-lg">My Story</a>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
 
-  <!-- LIFESTYLE TEASER -->
-  <section class="section lifestyle-teaser">
-    <div class="container">
-      <p class="section-eyebrow center reveal">The Life</p>
-      <h2 class="section-title center reveal">Built Different.<br /><span class="gold">Lives Different.</span></h2>
-      <div class="gallery-grid reveal">
-
-        <div class="gallery-item">
-          <div class="gallery-placeholder gp-benz">
-            <span class="gp-icon">🏎️</span>
-            <span class="gp-label">The Benz Life</span>
-            <span class="gp-sub">Mercedes-Benz</span>
-          </div>
-          <div class="gallery-overlay"><span>Benz Life 🔥</span></div>
+    <!-- Actual content -->
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge reveal">
+          <span class="hero-badge-dot"></span>
+          Pakistan's Top Entrepreneur
         </div>
 
-        <div class="gallery-item">
-          <div class="gallery-placeholder gp-pakistan">
-            <span class="gp-icon">🇵🇰</span>
-            <span class="gp-label">Ahmad Mullick</span>
-            <span class="gp-sub">The Pioneer</span>
-          </div>
-          <div class="gallery-overlay"><span>@ahmad.mullick</span></div>
+        <h1 class="hero-headline reveal">
+          Ahmad<br />
+          <span class="line-gold">Mullick.</span>
+        </h1>
+
+        <p class="hero-statement reveal">
+          From <strong>zero to $300K/year</strong> on Airbnb. Race Wars Pakistan champion.
+          Building businesses and guiding the next generation of Pakistani entrepreneurs.
+        </p>
+
+        <div class="hero-ctas reveal">
+          <a href="consulting.html" class="btn btn-gold btn-lg">Work With Me</a>
+          <a href="about.html" class="btn btn-outline btn-lg">My Story</a>
         </div>
 
-        <div class="gallery-item">
-          <div class="gallery-placeholder gp-penthouse">
-            <span class="gp-icon">🏙️</span>
-            <span class="gp-label">Penthouse</span>
-            <span class="gp-sub">Day 4 of my Penthouse</span>
-          </div>
-          <div class="gallery-overlay"><span>Penthouse Living</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <div class="gallery-placeholder gp-business">
-            <span class="gp-icon">💰</span>
-            <span class="gp-label">1 Crore+</span>
-            <span class="gp-sub">Business Deals</span>
-          </div>
-          <div class="gallery-overlay"><span>What I Did with 1 Crore</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <div class="gallery-placeholder gp-lifestyle">
-            <span class="gp-icon">🚀</span>
-            <span class="gp-label">Race Wars</span>
-            <span class="gp-sub">Champion 🏆</span>
-          </div>
-          <div class="gallery-overlay"><span>Race Wars Winner</span></div>
-        </div>
-
-      </div>
-      <div style="text-align:center; margin-top:36px;">
-        <a href="about.html" class="btn btn-outline">See Full Story</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT PREVIEW -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="section-eyebrow reveal">The Story</p>
-          <h2 class="section-title reveal">Built from<br /><span class="gold">Scratch.</span></h2>
-          <p class="body-text reveal">
-            Ahmad Mullick took the concept of Airbnb — largely untapped in Pakistan — and scaled it to <strong>$300,000 per year</strong>. No playbook, no roadmap. Just vision and relentless execution.
-          </p>
-          <p class="body-text reveal">
-            Beyond Airbnb, he's a <strong>Race Wars Pakistan champion</strong> and a content creator who documents real business milestones so the next generation of Pakistani entrepreneurs can follow the same blueprint.
-          </p>
-          <div class="about-flags reveal">
-            <span class="flag-pill">🇵🇰 Pakistan</span>
-            <span class="flag-pill">🏠 Airbnb Pioneer</span>
-            <span class="flag-pill">🏎️ Race Wars Winner</span>
-            <span class="flag-pill">💼 Business Builder</span>
-          </div>
-          <div style="margin-top:32px;" class="reveal">
-            <a href="about.html" class="btn btn-primary">Full Story →</a>
-          </div>
-        </div>
-        <div class="about-visual reveal">
-          <div class="visual-card">
-            <div class="vc-inner">
-              <div class="vc-avatar">AM</div>
-              <div class="vc-name">Ahmad Mullick</div>
-              <div class="vc-handle">@ahmad.mullick</div>
-              <div class="vc-verified">
-                <svg viewBox="0 0 24 24" fill="#1da1f2" width="14" height="14"><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.33-2.19c1.4.45 2.91.19 3.92-.81s1.26-2.52.8-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/></svg>
-                Verified
-              </div>
-              <div class="vc-quote">"I started Airbnb in Pakistan 🇵🇰<br />grew it to $300k/Year"</div>
+        <div class="hero-stats-row reveal">
+          <div class="hero-stat-item">
+            <div class="hsi-num">
+              <span class="stat-num" data-target="25">0</span><span class="suffix">K+</span>
             </div>
-            <div class="vc-glow"></div>
+            <div class="hsi-label">Followers</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hsi-num">
+              <span class="stat-num" data-target="300">0</span><span class="suffix">K</span>
+            </div>
+            <div class="hsi-label">$/Year Airbnb</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hsi-num">
+              <span class="stat-num" data-target="1">0</span><span class="suffix"> Cr+</span>
+            </div>
+            <div class="hsi-label">Business Deals</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-frame reveal">
+        <div class="hero-photo-inner">
+          <div class="photo-placeholder">
+            <div class="photo-initials">AM</div>
+            <div class="photo-label">Ahmad Mullick</div>
+          </div>
+          <div class="photo-tag">
+            <div class="photo-tag-name">@ahmad.mullick</div>
+            <div class="photo-tag-stat">25K Followers<br />Pakistan 🇵🇰</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ACHIEVEMENTS -->
-  <section class="section achievements">
+  <!-- ─── TICKER ─── -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span class="ticker-item">Airbnb Pioneer<span class="ticker-dot"></span></span>
+      <span class="ticker-item">$300K / Year<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Race Wars Champion<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Penthouse Life<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Business Builder<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Pakistan 🇵🇰<span class="ticker-dot"></span></span>
+      <span class="ticker-item">1 Crore+ Deals<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Mercedes-Benz<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Airbnb Pioneer<span class="ticker-dot"></span></span>
+      <span class="ticker-item">$300K / Year<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Race Wars Champion<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Penthouse Life<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Business Builder<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Pakistan 🇵🇰<span class="ticker-dot"></span></span>
+      <span class="ticker-item">1 Crore+ Deals<span class="ticker-dot"></span></span>
+      <span class="ticker-item">Mercedes-Benz<span class="ticker-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ─── STORY ─── -->
+  <section class="section story-section">
     <div class="container">
-      <p class="section-eyebrow center reveal">Track Record</p>
-      <h2 class="section-title center reveal">The <span class="gold">Wins.</span></h2>
-      <div class="wins-grid">
-        <div class="win-card reveal">
-          <div class="win-icon">💰</div>
-          <div class="win-number">$300K</div>
-          <div class="win-label">Annual Airbnb Revenue</div>
-          <p class="win-desc">Built Pakistan's most successful Airbnb operation from the ground up — zero to fully scaled hospitality business.</p>
+      <div class="story-grid">
+        <!-- Photo collage -->
+        <div class="story-visual reveal-left">
+          <div class="story-photo-main">
+            <div class="photo-initials" style="font-size:60px;opacity:0.3;">AM</div>
+          </div>
+          <div class="story-photo-accent">
+            <div class="sa-icon">🏠</div>
+            <div class="sa-num">$300K</div>
+            <div class="sa-label">Annual Revenue</div>
+          </div>
         </div>
-        <div class="win-card reveal featured">
-          <div class="win-badge">Flagship Win</div>
-          <div class="win-icon">🏎️</div>
-          <div class="win-number">Champion</div>
-          <div class="win-label">Race Wars Pakistan</div>
-          <p class="win-desc">Winner at @racewars.pk — one of Pakistan's most prestigious racing events. Competitor in every arena.</p>
-        </div>
-        <div class="win-card reveal">
-          <div class="win-icon">🚀</div>
-          <div class="win-number">1 Crore+</div>
-          <div class="win-label">Business Deals</div>
-          <p class="win-desc">Documented crore-level milestones, showing his audience how deals at scale are structured in Pakistan.</p>
-        </div>
-        <div class="win-card reveal">
-          <div class="win-icon">👥</div>
-          <div class="win-number">25K+</div>
-          <div class="win-label">Community</div>
-          <p class="win-desc">A loyal community of entrepreneurs applying his frameworks and following his real-time business journey.</p>
-        </div>
-        <div class="win-card reveal">
-          <div class="win-icon">🏠</div>
-          <div class="win-number">Penthouse</div>
-          <div class="win-label">Lifestyle Unlocked</div>
-          <p class="win-desc">From humble beginnings to penthouse living — the dream life is the motivation and proof of concept.</p>
-        </div>
-        <div class="win-card reveal">
-          <div class="win-icon">🌍</div>
-          <div class="win-number">Pioneer</div>
-          <div class="win-label">Airbnb in Pakistan</div>
-          <p class="win-desc">One of the earliest entrepreneurs to spot the Airbnb opportunity in Pakistan and systematically scale it.</p>
+
+        <!-- Text -->
+        <div class="story-text reveal-right">
+          <div class="eyebrow">The Story</div>
+          <h2 class="display-title" style="margin-bottom:24px;">
+            Built from<br /><span class="gold-word">Scratch.</span>
+          </h2>
+
+          <blockquote class="story-quote">
+            "I started Airbnb in Pakistan 🇵🇰<br />
+            and grew it to <span class="highlight">$300K a year</span>."
+          </blockquote>
+
+          <p class="body-text">
+            Ahmad Mullick took a concept largely untapped in Pakistan and scaled it into a
+            <strong>$300,000/year hospitality empire</strong>. No playbook, no roadmap. Just
+            relentless execution and a vision others thought was impossible.
+          </p>
+          <p class="body-text">
+            Beyond business, he's a <strong>Race Wars Pakistan champion</strong>, a content creator
+            documenting real milestones, and a mentor turning his blueprint into generational wealth
+            for the next wave of Pakistani entrepreneurs.
+          </p>
+
+          <a href="about.html" class="btn btn-gold" style="margin-top:16px;">Full Story →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTENT PREVIEW -->
-  <section class="section content-section">
+  <hr class="section-divider" />
+
+  <!-- ─── WHAT I DO ─── -->
+  <section class="section pillars-section">
     <div class="container">
-      <p class="section-eyebrow center reveal">What He Creates</p>
-      <h2 class="section-title center reveal">Real Content.<br /><span class="gold">Real Results.</span></h2>
-      <p class="section-subtitle center reveal">No fluff, no fake gurus. Ahmad documents the actual journey.</p>
-      <div class="content-grid">
-        <div class="content-card reveal"><div class="cc-icon">🏠</div><h3>Airbnb Blueprint</h3><p>Step-by-step breakdowns of how he built his Airbnb empire in Pakistan — from property selection to pricing to guest experience.</p></div>
-        <div class="content-card reveal"><div class="cc-icon">💼</div><h3>Business Building</h3><p>Real-world tactics for Pakistani entrepreneurs. Finding opportunities, structuring deals, and scaling without fluff.</p></div>
-        <div class="content-card reveal"><div class="cc-icon">💰</div><h3>Money Milestones</h3><p>Transparent documentation of crore-level business moments. What it takes and what comes after hitting major numbers.</p></div>
-        <div class="content-card reveal"><div class="cc-icon">🧴</div><h3>Men's Lifestyle</h3><p>Skincare, fitness, style and the habits that fuel high performance — because how you show up matters.</p></div>
-        <div class="content-card reveal"><div class="cc-icon">🧠</div><h3>Mindset & Identity</h3><p>The psychological side of success — introvert energy, identity shifts, and the inner work required to build at scale.</p></div>
-        <div class="content-card reveal"><div class="cc-icon">🏎️</div><h3>Passion & Lifestyle</h3><p>Cars, racing, penthouse life. Ahmad doesn't separate his passions from his work — the dream life is the proof.</p></div>
+      <div class="eyebrow center">What I Do</div>
+      <h2 class="display-title" style="text-align:center;margin-bottom:0;">
+        Three Pillars of<br /><span class="gold-word">My Empire.</span>
+      </h2>
+
+      <div class="pillars-grid">
+        <div class="pillar-card reveal">
+          <div class="pillar-num">01</div>
+          <span class="pillar-icon">🏠</span>
+          <h3 class="pillar-title">Airbnb Business</h3>
+          <p class="pillar-desc">
+            Pakistan's most successful Airbnb operator. I built the systems, cracked the pricing,
+            and scaled to $300K/year. Now I teach others how to replicate it.
+          </p>
+          <a href="consulting.html" class="pillar-link">Get Consulting →</a>
+        </div>
+
+        <div class="pillar-card reveal">
+          <div class="pillar-num">02</div>
+          <span class="pillar-icon">🎥</span>
+          <h3 class="pillar-title">Content & Brand</h3>
+          <p class="pillar-desc">
+            25K+ followers watching the real journey unfold — penthouse, Benz, race wins,
+            1 Crore deals. No fake guru energy. Just proof of what's possible.
+          </p>
+          <a href="https://www.instagram.com/ahmad.mullick" target="_blank" class="pillar-link">Follow Along →</a>
+        </div>
+
+        <div class="pillar-card reveal">
+          <div class="pillar-num">03</div>
+          <span class="pillar-icon">🚀</span>
+          <h3 class="pillar-title">Mentorship</h3>
+          <p class="pillar-desc">
+            Courses, 1-on-1 sessions, and group mentorship programmes turning ambitious
+            Pakistanis into business owners. Your blueprint, my experience.
+          </p>
+          <a href="shop.html" class="pillar-link">Browse Courses →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- MINI CTA -->
-  <section class="section contact">
+  <!-- ─── LIFESTYLE GALLERY ─── -->
+  <section class="section life-section">
+    <div class="container-wide">
+      <div class="eyebrow center">The Life</div>
+      <h2 class="display-title" style="text-align:center;margin-bottom:0;">
+        Built Different.<br /><span class="gold-word">Lives Different.</span>
+      </h2>
+
+      <div class="life-grid">
+        <div class="life-item">
+          <div class="life-fill lf-benz">
+            <div class="life-icon">🏎️</div>
+            <div class="life-label">The Benz</div>
+            <div class="life-sub">Mercedes-Benz</div>
+          </div>
+          <div class="life-overlay"><span>Benz Life 🔥</span></div>
+        </div>
+
+        <div class="life-item">
+          <div class="life-fill lf-penthouse">
+            <div class="life-icon">🏙️</div>
+            <div class="life-label">Penthouse</div>
+            <div class="life-sub">Day 4 of my Penthouse</div>
+          </div>
+          <div class="life-overlay"><span>Penthouse Living</span></div>
+        </div>
+
+        <div class="life-item">
+          <div class="life-fill lf-pakistan">
+            <div class="life-icon">🇵🇰</div>
+            <div class="life-label">Ahmad Mullick</div>
+            <div class="life-sub">The Pioneer</div>
+          </div>
+          <div class="life-overlay"><span>@ahmad.mullick</span></div>
+        </div>
+
+        <div class="life-item">
+          <div class="life-fill lf-race">
+            <div class="life-icon">🏆</div>
+            <div class="life-label">Race Wars</div>
+            <div class="life-sub">Champion</div>
+          </div>
+          <div class="life-overlay"><span>Race Wars Winner</span></div>
+        </div>
+
+        <div class="life-item">
+          <div class="life-fill lf-business">
+            <div class="life-icon">💰</div>
+            <div class="life-label">1 Crore+</div>
+            <div class="life-sub">Business Deals</div>
+          </div>
+          <div class="life-overlay"><span>What I Did with 1 Crore</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WINS / NUMBERS ─── -->
+  <section class="section wins-section">
     <div class="container">
-      <div class="contact-inner">
-        <div class="contact-glow"></div>
-        <p class="section-eyebrow center reveal">Ready?</p>
-        <h2 class="section-title center reveal">Let's Build<br /><span class="gold">Something Together.</span></h2>
-        <p class="section-subtitle center reveal">Whether you want mentorship, a course, or just to follow the journey — start here.</p>
-        <div class="contact-ctas reveal">
-          <a href="consulting.html" class="btn btn-primary btn-lg">Get Consulting</a>
-          <a href="shop.html" class="btn btn-outline btn-lg">Browse Shop</a>
-          <a href="https://wa.me/923001234567?text=Hi%20Ahmad!" target="_blank" class="btn btn-whatsapp btn-lg">
+      <div class="eyebrow center">Track Record</div>
+      <h2 class="display-title" style="text-align:center;margin-bottom:0;">
+        The <span class="gold-word">Wins.</span>
+      </h2>
+
+      <div class="wins-row">
+        <div class="win-item reveal">
+          <div class="wi-icon">💰</div>
+          <div class="wi-num">$300K</div>
+          <div class="wi-label">Annual Airbnb Revenue</div>
+          <div class="wi-desc">Built Pakistan's most successful Airbnb operation from ground zero to fully scaled.</div>
+        </div>
+        <div class="win-item reveal">
+          <div class="wi-icon">🏎️</div>
+          <div class="wi-num">Champion</div>
+          <div class="wi-label">Race Wars Pakistan</div>
+          <div class="wi-desc">Winner at @racewars.pk — one of Pakistan's most prestigious racing events.</div>
+        </div>
+        <div class="win-item reveal">
+          <div class="wi-icon">🚀</div>
+          <div class="wi-num">1 Crore+</div>
+          <div class="wi-label">Business Deals</div>
+          <div class="wi-desc">Documented crore-level milestones showing how deals at scale are structured.</div>
+        </div>
+        <div class="win-item reveal">
+          <div class="wi-icon">👥</div>
+          <div class="wi-num">25K+</div>
+          <div class="wi-label">Community</div>
+          <div class="wi-desc">A loyal community of entrepreneurs applying his frameworks in real time.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONSULTING PREVIEW ─── -->
+  <section class="section consult-section">
+    <div class="container">
+      <div class="consult-intro">
+        <div>
+          <div class="eyebrow">Work With Me</div>
+          <h2 class="display-title">
+            Ready to<br /><span class="gold-word">Level Up?</span>
+          </h2>
+          <p class="body-text" style="max-width:460px;">
+            Pick the programme that fits your stage. From a single strategy call to a
+            full business build — Ahmad works directly with you.
+          </p>
+        </div>
+        <div>
+          <a href="consulting.html" class="btn btn-outline">View All Packages →</a>
+        </div>
+      </div>
+
+      <div class="packages-grid">
+        <div class="pkg-card reveal">
+          <div class="pkg-icon">📞</div>
+          <div class="pkg-name">Strategy Call</div>
+          <div class="pkg-price">₨15K</div>
+          <div class="pkg-note">One-time · 60 minutes</div>
+          <p class="pkg-desc">A focused deep-dive into your business. Ahmad diagnoses, prescribes, and gives you a clear action plan.</p>
+          <ul class="pkg-features">
+            <li>60-minute 1-on-1 call</li>
+            <li>Business audit</li>
+            <li>Action plan document</li>
+            <li>Follow-up voice note</li>
+          </ul>
+          <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20to%20book%20a%20Strategy%20Call!" target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">Book via WhatsApp</a>
+        </div>
+
+        <div class="pkg-card featured reveal">
+          <div class="pkg-popular">Most Popular</div>
+          <div class="pkg-icon">🏠</div>
+          <div class="pkg-name">Airbnb Mentorship</div>
+          <div class="pkg-price">₨50K</div>
+          <div class="pkg-note">4 weeks · Full access</div>
+          <p class="pkg-desc">Ahmad's complete Airbnb playbook delivered as a live mentorship. From zero to your first booking.</p>
+          <ul class="pkg-features">
+            <li>4 weekly video calls</li>
+            <li>Property selection help</li>
+            <li>Pricing & listing setup</li>
+            <li>Guest management SOPs</li>
+            <li>WhatsApp support</li>
+          </ul>
+          <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20to%20join%20Airbnb%20Mentorship!" target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;">Start Now</a>
+        </div>
+
+        <div class="pkg-card reveal">
+          <div class="pkg-icon">🚀</div>
+          <div class="pkg-name">Business Builder</div>
+          <div class="pkg-price">₨1.2L</div>
+          <div class="pkg-note">3 months · All-in</div>
+          <p class="pkg-desc">Full business co-build. Ahmad gets into the trenches with you to build, launch, and scale your operation.</p>
+          <ul class="pkg-features">
+            <li>Bi-weekly 1-on-1 calls</li>
+            <li>Business model design</li>
+            <li>Investor deck help</li>
+            <li>Deal structure support</li>
+            <li>Direct line access</li>
+          </ul>
+          <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20Business%20Builder%20programme!" target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COURSES PREVIEW ─── -->
+  <section class="section shop-section">
+    <div class="container">
+      <div class="eyebrow center">The Shop</div>
+      <h2 class="display-title" style="text-align:center;margin-bottom:0;">
+        Learn at Your<br /><span class="gold-word">Own Pace.</span>
+      </h2>
+
+      <div class="courses-grid">
+        <div class="course-card reveal">
+          <div class="course-thumb ct-1">
+            🏠
+            <span class="course-tag">Bestseller</span>
+          </div>
+          <div class="course-body">
+            <div class="course-cat">Airbnb</div>
+            <div class="course-name">Airbnb Mastery Pakistan</div>
+            <p class="course-desc">The complete step-by-step system Ahmad used to hit $300K/year. Zero to scaled, filmed live.</p>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="course-price-old">₨29,999</span>
+                ₨19,999
+              </div>
+              <a href="shop.html" class="btn btn-gold btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-thumb ct-2">
+            💼
+            <span class="course-tag">New</span>
+          </div>
+          <div class="course-body">
+            <div class="course-cat">Business</div>
+            <div class="course-name">Deal-Making Fundamentals</div>
+            <p class="course-desc">How to structure, negotiate, and close deals at scale in Pakistan's business landscape.</p>
+            <div class="course-footer">
+              <div class="course-price">₨12,999</div>
+              <a href="shop.html" class="btn btn-gold btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-thumb ct-3">
+            🧠
+          </div>
+          <div class="course-body">
+            <div class="course-cat">Mindset</div>
+            <div class="course-name">Introvert Entrepreneur</div>
+            <p class="course-desc">Build big without burning out. Ahmad's guide to scaling a business as a quiet, focused operator.</p>
+            <div class="course-footer">
+              <div class="course-price">₨8,999</div>
+              <a href="shop.html" class="btn btn-gold btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <a href="shop.html" class="btn btn-outline btn-lg">Browse Full Shop →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="section testi-section">
+    <div class="container">
+      <div class="eyebrow center">Social Proof</div>
+      <h2 class="display-title" style="text-align:center;margin-bottom:0;">
+        What They're<br /><span class="gold-word">Saying.</span>
+      </h2>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Ahmad's Airbnb mentorship changed my life. I went from a 9-5 job to my first property earning ₨80K/month in just 6 weeks."</p>
+          <div class="testi-person">
+            <div class="testi-avatar">RK</div>
+            <div>
+              <div class="testi-name">Raza Khan</div>
+              <div class="testi-loc">Lahore, Pakistan</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The Strategy Call alone was worth 10x the price. Ahmad spotted 3 problems in my business in the first 15 minutes. Mind-blowing clarity."</p>
+          <div class="testi-person">
+            <div class="testi-avatar">SA</div>
+            <div>
+              <div class="testi-name">Sana Aslam</div>
+              <div class="testi-loc">Karachi, Pakistan</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"I followed Ahmad for 6 months before investing in his course. Best decision I ever made. Real knowledge, real results, no BS."</p>
+          <div class="testi-person">
+            <div class="testi-avatar">UA</div>
+            <div>
+              <div class="testi-name">Usman Ahmed</div>
+              <div class="testi-loc">Islamabad, Pakistan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BIG CTA ─── -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <div class="eyebrow center">Ready?</div>
+        <h2 class="cta-title">
+          Let's Build<br /><span class="gold">Something Together.</span>
+        </h2>
+        <p class="cta-sub">Whether you want mentorship, a course, or just to follow the journey — the door is open. Pakistan's next business success story could be yours.</p>
+        <div class="cta-btns">
+          <a href="consulting.html" class="btn btn-gold btn-xl">Get Consulting</a>
+          <a href="shop.html" class="btn btn-outline btn-xl">Browse Shop</a>
+          <a href="https://wa.me/923001234567?text=Hi%20Ahmad!" target="_blank" class="btn btn-wa btn-xl">
             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             WhatsApp
           </a>
         </div>
-        <div class="contact-flags reveal">
-          <span>🇵🇰 Based in Pakistan</span>
-          <span>·</span>
-          <span>Building Globally</span>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ─── FOOTER ─── -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <div class="footer-logo">AM</div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="consulting.html">Consulting</a>
-          <a href="shop.html">Shop</a>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">AM</div>
+          <p class="footer-tagline">Entrepreneur. Builder. Pakistan's Airbnb pioneer. Turning ambition into empire since day one.</p>
         </div>
-        <p class="footer-copy">© 2025 Ahmad Mullick</p>
-        <a href="https://www.instagram.com/ahmad.mullick" target="_blank" class="footer-ig">@ahmad.mullick</a>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Navigate</div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Services</div>
+          <ul>
+            <li><a href="consulting.html">Strategy Call</a></li>
+            <li><a href="consulting.html">Airbnb Mentorship</a></li>
+            <li><a href="consulting.html">Business Builder</a></li>
+            <li><a href="shop.html">Courses</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/ahmad.mullick" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              @ahmad.mullick
+            </a>
+            <a href="https://wa.me/923001234567" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Ahmad Mullick · All Rights Reserved</p>
+        <a href="https://www.instagram.com/ahmad.mullick" target="_blank" class="footer-ig">@ahmad.mullick · Pakistan 🇵🇰</a>
       </div>
     </div>
   </footer>
