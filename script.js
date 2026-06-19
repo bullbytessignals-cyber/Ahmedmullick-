@@ -8,54 +8,49 @@ window.addEventListener('scroll', () => {
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(
   (entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, (entry.target.dataset.delay || 0) * 100);
+        const delay = parseInt(entry.target.dataset.delay || 0, 10) * 80;
+        setTimeout(() => entry.target.classList.add('visible'), delay);
         observer.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
 );
 reveals.forEach((el, i) => {
-  el.dataset.delay = i % 6;
+  el.dataset.delay = i % 8;
   observer.observe(el);
 });
 
 // Counter animation
-function animateCounter(el, target, suffix) {
-  const duration = 2000;
+function animateCounter(el, target) {
+  const duration = 2200;
   const start = performance.now();
   const update = (time) => {
-    const elapsed = time - start;
-    const progress = Math.min(elapsed / duration, 1);
+    const progress = Math.min((time - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
-    const value = Math.round(eased * target);
-    el.textContent = value.toLocaleString();
+    el.textContent = Math.round(eased * target).toLocaleString();
     if (progress < 1) requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
 }
 
-const statNums = document.querySelectorAll('.stat-num[data-target]');
 const counterObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const target = parseInt(el.dataset.target, 10);
-        animateCounter(el, target);
+        animateCounter(el, parseInt(el.dataset.target, 10));
         counterObserver.unobserve(el);
       }
     });
   },
   { threshold: 0.5 }
 );
-statNums.forEach(el => counterObserver.observe(el));
+document.querySelectorAll('.stat-num[data-target]').forEach(el => counterObserver.observe(el));
 
-// Smooth scroll for nav links
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const id = link.getAttribute('href').slice(1);
@@ -65,4 +60,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
+});
+
+// Active nav link based on current page
+const path = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === path) link.classList.add('active');
+  else link.classList.remove('active');
 });

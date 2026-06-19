@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Buy Ahmad Mullick's Courses & Resources</title>
+  <meta name="description" content="Buy Ahmad Mullick's courses, guides and resources. Learn how to build an Airbnb business in Pakistan and scale to $300K/year." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .banner-strip {
+      background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+      background-size: 200% 100%;
+      animation: bannerMove 4s linear infinite;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+    }
+    @keyframes bannerMove {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 200% 0%; }
+    }
+    .banner-strip p {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0A0A0A;
+      letter-spacing: 0.06em;
+    }
+    .nav { top: 38px; }
+
+    /* Cart badge style */
+    .cart-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .cart-badge:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Trust badges */
+    .trust-row {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 48px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .trust-icon { font-size: 20px; }
+
+    /* Category tabs */
+    .category-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+    .cat-tab {
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+    }
+    .cat-tab:hover, .cat-tab.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #0A0A0A;
+    }
+
+    /* Countdown */
+    .countdown-wrap {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px 0 32px;
+    }
+    .cd-unit {
+      text-align: center;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      padding: 14px 20px;
+      min-width: 72px;
+    }
+    .cd-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+    }
+    .cd-label {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Sale badge */
+    .sale-ribbon {
+      position: absolute;
+      top: 14px;
+      left: -3px;
+      background: #e53e3e;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px 4px 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+    }
+    .price-old {
+      text-decoration: line-through;
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="banner-strip">
+    <p>🔥 LIMITED TIME: 20% OFF all courses this week · Use code AHMAD20 at checkout · 🇵🇰 Pakistan's #1 Business Builder</p>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">Questions? Chat now!</span>
+    <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20have%20a%20question%20about%20your%20courses!" target="_blank" class="whatsapp-bubble" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">AM</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="consulting.html">Consulting</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+      </ul>
+      <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20a%20course!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+    </div>
+  </nav>
+
+  <!-- SHOP HERO -->
+  <section class="page-hero shop-hero" style="padding-top:180px;background:var(--bg);">
+    <div class="grid-overlay"></div>
+    <div class="container">
+      <p class="section-eyebrow center reveal">Ahmad Mullick's Store</p>
+      <h1 class="section-title center reveal" style="font-size:clamp(44px,8vw,86px);">Buy the<br /><span class="gold">Blueprint.</span></h1>
+      <p class="section-subtitle center reveal">
+        Every course, guide and resource Ahmad has built — distilled from real business experience in Pakistan. Buy once, apply forever.
+      </p>
+      <div class="trust-row reveal">
+        <div class="trust-item"><span class="trust-icon">🔒</span> Secure Payment</div>
+        <div class="trust-item"><span class="trust-icon">📲</span> Instant Access via WhatsApp</div>
+        <div class="trust-item"><span class="trust-icon">🇵🇰</span> Made for Pakistan</div>
+        <div class="trust-item"><span class="trust-icon">♾️</span> Lifetime Access</div>
+        <div class="trust-item"><span class="trust-icon">✅</span> Real Results Proven</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCT -->
+  <section class="section shop-featured" style="background:var(--bg-2);">
+    <div class="container">
+      <p class="section-eyebrow center reveal">Bestseller</p>
+      <h2 class="section-title center reveal">The <span class="gold">Flagship Course.</span></h2>
+
+      <div class="featured-product">
+        <div class="fp-visual">
+          <span class="fp-icon">🏠</span>
+          <span class="fp-badge-inner">BESTSELLER</span>
+        </div>
+        <div class="fp-content">
+          <p class="fp-tag">Airbnb · Business · Pakistan</p>
+          <h2 class="fp-title">Airbnb Mastery Pakistan:<br /><span class="gold">Zero to $300K</span></h2>
+          <p class="fp-desc">The complete A-to-Z system that took Ahmad from knowing nothing about Airbnb to generating $300,000 per year in Pakistan. Every module is built for the Pakistani market — legal, financial, operational.</p>
+          <div class="fp-includes">
+            <div class="fp-includes-title">What's Inside</div>
+            <ul>
+              <li>12 video modules (8+ hours)</li>
+              <li>Pakistan legal framework guide</li>
+              <li>Property selection calculator</li>
+              <li>Pricing strategy system</li>
+              <li>Listing optimization templates</li>
+              <li>Guest communication scripts</li>
+              <li>Revenue tracking dashboard</li>
+              <li>Ahmad's personal contacts list</li>
+              <li>Private WhatsApp community</li>
+              <li>Monthly live Q&amp;A (3 months)</li>
+            </ul>
+          </div>
+          <div class="fp-price">
+            <div><span class="price-old">₨25,000</span><span class="fp-price-main">₨19,999</span></div>
+            <p class="fp-price-note">~$70 USD · Lifetime access · All future updates free</p>
+          </div>
+          <div class="fp-ctas">
+            <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20to%20buy%20the%20Airbnb%20Mastery%20Pakistan%20course!" target="_blank" class="btn btn-whatsapp btn-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Buy via WhatsApp — ₨19,999
+            </a>
+            <a href="consulting.html" class="btn btn-outline btn-lg">Want 1-on-1 Instead?</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ALL PRODUCTS -->
+  <section class="section all-products">
+    <div class="container">
+      <p class="section-eyebrow center reveal">The Full Store</p>
+      <h2 class="section-title center reveal">All <span class="gold">Products.</span></h2>
+
+      <div class="category-tabs reveal">
+        <button class="cat-tab active">All</button>
+        <button class="cat-tab">Airbnb</button>
+        <button class="cat-tab">Business</button>
+        <button class="cat-tab">Mindset</button>
+        <button class="cat-tab">Templates</button>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card reveal">
+          <div class="product-thumb pt-1">
+            <span>🏠</span>
+            <span class="product-label">Bestseller</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Airbnb</div>
+            <div class="product-name">Airbnb Mastery Pakistan</div>
+            <p class="product-desc">The complete system for starting and scaling Airbnb in Pakistan. Based on Ahmad's personal $300K/year operation.</p>
+            <div class="product-footer">
+              <div>
+                <span class="price-old">₨25,000</span>
+                <div class="product-price">₨19,999</div>
+                <div class="product-price-sub">Lifetime access</div>
+              </div>
+              <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Airbnb%20Mastery%20Pakistan!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal">
+          <div class="product-thumb pt-2">
+            <span>💼</span>
+            <span class="sale-ribbon">Sale</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Business</div>
+            <div class="product-name">Pakistan Startup Blueprint</div>
+            <p class="product-desc">How to find a business idea, validate it with zero budget, and launch your first business in Pakistan in 30 days.</p>
+            <div class="product-footer">
+              <div>
+                <span class="price-old">₨10,000</span>
+                <div class="product-price">₨7,999</div>
+                <div class="product-price-sub">Digital download + video</div>
+              </div>
+              <a href="https://wa.me/923001234567?text=I%20want%20the%20Pakistan%20Startup%20Blueprint!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal">
+          <div class="product-thumb pt-3">
+            <span>🧠</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Mindset</div>
+            <div class="product-name">Introvert Entrepreneur</div>
+            <p class="product-desc">How Ahmad built a crore+ business without being the loudest person in the room. Systems, routines, and the psychology of quiet success.</p>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">₨5,999</div>
+                <div class="product-price-sub">Video course · 4 hours</div>
+              </div>
+              <a href="https://wa.me/923001234567?text=I%20want%20the%20Introvert%20Entrepreneur%20course!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card reveal">
+          <div class="product-thumb pt-4">
+            <span>📊</span>
+            <span class="product-label">New</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Templates</div>
+            <div class="product-name">Airbnb Operations Pack</div>
+            <p class="product-desc">Ahmad's actual spreadsheets and templates — property tracker, pricing model, guest checklist, revenue calculator. Copy and use immediately.</p>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">₨2,999</div>
+                <div class="product-price-sub">Instant download</div>
+              </div>
+              <a href="https://wa.me/923001234567?text=I%20want%20the%20Airbnb%20Operations%20Pack!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card reveal">
+          <div class="product-thumb pt-5">
+            <span>🚀</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Business</div>
+            <div class="product-name">1 Crore Challenge</div>
+            <p class="product-desc">The exact steps Ahmad took to crack his first crore-rupee milestone. A live case study broken into a 6-module course.</p>
+            <div class="product-footer">
+              <div>
+                <span class="price-old">₨15,000</span>
+                <div class="product-price">₨11,999</div>
+                <div class="product-price-sub">Video course + workbook</div>
+              </div>
+              <a href="https://wa.me/923001234567?text=I%20want%20the%201%20Crore%20Challenge%20course!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card reveal">
+          <div class="product-thumb pt-6">
+            <span>🧴</span>
+            <span class="product-label">New</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Lifestyle</div>
+            <div class="product-name">Men's Skincare Guide PK</div>
+            <p class="product-desc">Ahmad's full skincare routine adapted for Pakistan's climate and market. Products, routine, and the mindset of investing in yourself.</p>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">₨1,999</div>
+                <div class="product-price-sub">PDF guide + video walkthrough</div>
+              </div>
+              <a href="https://wa.me/923001234567?text=I%20want%20the%20Men%27s%20Skincare%20Guide!" target="_blank" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLE OFFER -->
+  <section class="section" style="background:var(--bg-2);">
+    <div class="container">
+      <div class="cta-block">
+        <p style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;position:relative;">Best Value — Save 40%</p>
+        <h2 class="cta-block-title">The <span class="gold">Complete Bundle.</span></h2>
+        <p class="cta-block-text">Get every course, template and guide in one bundle. All current products + every future product Ahmad releases — for life. One payment, unlimited access.</p>
+        <div style="margin-bottom:28px;position:relative;">
+          <p style="font-size:18px;color:var(--text-muted);margin-bottom:4px;"><span style="text-decoration:line-through;">₨60,000</span></p>
+          <p style="font-family:'Playfair Display',serif;font-size:52px;font-weight:900;color:var(--gold);line-height:1;">₨35,000</p>
+          <p style="font-size:14px;color:var(--text-muted);">~$120 USD · All 6 products + lifetime updates</p>
+        </div>
+        <div class="cta-block-btns">
+          <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20want%20the%20Complete%20Bundle!" target="_blank" class="btn btn-whatsapp btn-xl">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Get the Bundle — ₨35,000
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="section shop-guarantee" style="background:var(--bg);">
+    <div class="container">
+      <div class="guarantee-inner">
+        <div class="guarantee-icon">🛡️</div>
+        <h2 class="guarantee-title">The Ahmad <span class="gold">Promise.</span></h2>
+        <p class="guarantee-text">If you buy any course, apply the material for 30 days, and genuinely don't see value — message Ahmad directly on WhatsApp. He'll either help you get it working or refund you. No questions asked. No forms to fill.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/923001234567?text=Hi%20Ahmad%2C%20I%20have%20a%20question%20about%20your%20courses!" target="_blank" class="btn btn-primary btn-lg">Ask Ahmad Directly</a>
+          <a href="consulting.html" class="btn btn-outline btn-lg">Or Book 1-on-1 Help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">AM</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="consulting.html">Consulting</a>
+          <a href="shop.html">Shop</a>
+        </div>
+        <p class="footer-copy">© 2025 Ahmad Mullick</p>
+        <a href="https://www.instagram.com/ahmad.mullick" target="_blank" class="footer-ig">@ahmad.mullick</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Countdown timer
+    function updateCountdown() {
+      const now = new Date();
+      const end = new Date(now);
+      end.setDate(end.getDate() + ((7 - now.getDay()) % 7 || 7));
+      end.setHours(23, 59, 59, 0);
+      const diff = end - now;
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.querySelectorAll('.cd-days').forEach(el => el.textContent = String(d).padStart(2,'0'));
+      document.querySelectorAll('.cd-hours').forEach(el => el.textContent = String(h).padStart(2,'0'));
+      document.querySelectorAll('.cd-mins').forEach(el => el.textContent = String(m).padStart(2,'0'));
+      document.querySelectorAll('.cd-secs').forEach(el => el.textContent = String(s).padStart(2,'0'));
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Category tabs
+    document.querySelectorAll('.cat-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
