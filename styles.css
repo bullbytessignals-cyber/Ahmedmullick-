@@ -40,7 +40,7 @@ img { max-width: 100%; display: block; }
 .gold { color: var(--gold); }
 
 /* ─── TYPOGRAPHY ─────────── */
-h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; line-height: 1.05; }
+h1, h2, h3, h4 { font-family: 'Syne', serif; line-height: 1.05; }
 
 .eyebrow {
   display: flex;
@@ -227,7 +227,7 @@ h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; line-height: 1.05; }
   padding: 0 32px;
 }
 .nav-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 30px;
   font-weight: 700;
   color: var(--gold);
@@ -286,7 +286,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   z-index: 2;
 }
 .intro-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(100px, 22vw, 160px);
   font-weight: 700;
   color: var(--gold);
@@ -308,7 +308,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 @keyframes iExpand { to { width: 240px; } }
 .intro-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(22px, 5vw, 34px);
   font-weight: 600;
   color: #e8dfd2; /* hardcoded light — dark intro background */
@@ -389,7 +389,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   z-index: 0;
 }
 .hero-name-bg {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(72px, 16vw, 200px);
   font-weight: 900;
   line-height: 0.88;
@@ -435,7 +435,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   50% { transform: scale(1.5); opacity: 0.5; }
 }
 .hero-headline {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(52px, 8vw, 96px);
   font-weight: 900;
   line-height: 0.95;
@@ -464,7 +464,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .hero-stat-item { }
 .hsi-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 32px;
   font-weight: 900;
   color: var(--white);
@@ -514,7 +514,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   background: radial-gradient(ellipse 60% 60% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%);
 }
 .photo-initials {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 80px;
   font-weight: 900;
   color: var(--gold);
@@ -571,7 +571,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   align-items: center;
 }
 .photo-tag-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--white);
@@ -675,11 +675,11 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   text-align: center;
 }
 .sa-icon { font-size: 40px; }
-.sa-num { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 900; color: var(--gold); }
+.sa-num { font-family: 'Syne', serif; font-size: 36px; font-weight: 900; color: var(--gold); }
 .sa-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 
 .story-quote {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(20px, 3vw, 28px);
   font-weight: 700;
   color: var(--white);
@@ -719,7 +719,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .pillar-card:hover { background: var(--black-3); }
 .pillar-card:hover::after { opacity: 1; }
 .pillar-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 64px;
   font-weight: 900;
   color: transparent;
@@ -729,7 +729,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .pillar-icon { font-size: 40px; margin-bottom: 16px; display: block; }
 .pillar-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 26px;
   font-weight: 700;
   color: var(--white);
@@ -788,7 +788,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .lf-business { background: linear-gradient(145deg, #FBF2E2, #F2E0C2); }
 .life-icon { font-size: 44px; }
 .life-label {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 18px;
   font-weight: 700;
   color: var(--gold);
@@ -828,7 +828,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .win-item:hover { background: var(--black-3); }
 .wi-icon { font-size: 28px; margin-bottom: 16px; }
 .wi-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(36px, 4vw, 52px);
   font-weight: 900;
   color: var(--gold);
@@ -893,14 +893,14 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .pkg-icon { font-size: 36px; margin-bottom: 16px; }
 .pkg-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
   margin-bottom: 6px;
 }
 .pkg-price {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 40px;
   font-weight: 900;
   color: var(--gold);
@@ -975,7 +975,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   margin-bottom: 6px;
 }
 .course-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 19px;
   font-weight: 700;
   color: var(--white);
@@ -991,7 +991,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   border-top: 1px solid var(--border);
 }
 .course-price {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 22px;
   font-weight: 900;
   color: var(--gold);
@@ -1059,7 +1059,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   pointer-events: none;
 }
 .cta-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(36px, 5vw, 64px);
   font-weight: 900;
   color: var(--white);
@@ -1086,7 +1086,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .footer-brand {}
 .footer-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 32px;
   font-weight: 900;
   color: var(--gold);
@@ -1315,7 +1315,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .section-eyebrow.center::before { display: none; }
 .section-eyebrow.center::after { content: ''; display: block; width: 32px; height: 1px; background: var(--gold); flex-shrink: 0; }
 .section-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(36px, 5vw, 64px);
   font-weight: 900; line-height: 1.05; color: var(--white);
   letter-spacing: -0.02em; margin-bottom: 20px;
@@ -1353,7 +1353,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--gold); margin-bottom: 6px;
 }
-.timeline-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+.timeline-title { font-family: 'Syne', serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
 .timeline-text { font-size: 14px; color: var(--muted); line-height: 1.75; }
 
 /* Lifestyle / car showcase */
@@ -1373,14 +1373,14 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .cp-3 { background: linear-gradient(145deg, #FBEDEB, #F4D9D5); }
 .cp-4 { background: linear-gradient(145deg, #FBF2E2, #F2E0C2); }
 .cp-icon { font-size: 48px; }
-.cp-label { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: var(--gold); }
+.cp-label { font-family: 'Syne', serif; font-size: 18px; font-weight: 700; color: var(--gold); }
 .cp-tag { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .car-caption {
   position: absolute; bottom: 0; left: 0; right: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
   padding: 20px 20px 16px;
 }
-.car-caption h4 { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--white); margin-bottom: 2px; }
+.car-caption h4 { font-family: 'Syne', serif; font-size: 18px; color: var(--white); margin-bottom: 2px; }
 .car-caption p { font-size: 12px; color: var(--muted); }
 
 /* Values / content cards */
@@ -1393,7 +1393,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .content-card:hover { border-color: var(--border-gold); transform: translateY(-4px); }
 .cc-icon { font-size: 36px; margin-bottom: 16px; }
-.content-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+.content-card h3 { font-family: 'Syne', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
 .content-card p { font-size: 14px; color: var(--muted); line-height: 1.75; }
 
 /* Contact CTA (inner pages) */
@@ -1428,8 +1428,8 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   padding: 5px 16px; border-radius: 0 0 8px 8px;
 }
 .service-icon { font-size: 36px; margin-bottom: 16px; }
-.service-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-.service-price { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 4px; }
+.service-name { font-family: 'Syne', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.service-price { font-family: 'Syne', serif; font-size: 40px; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 4px; }
 .service-price-note { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
 .service-desc { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; flex: 1; }
 .service-features { list-style: none; margin-bottom: 28px; }
@@ -1447,8 +1447,8 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 @media (max-width: 640px) { .steps-grid { grid-template-columns: 1fr; } }
 .step-card { background: var(--black-2); padding: 40px 28px; transition: background var(--transition); }
 .step-card:hover { background: var(--black-3); }
-.step-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 900; color: transparent; -webkit-text-stroke: 1px rgba(201,168,76,0.25); line-height: 1; margin-bottom: 16px; }
-.step-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+.step-num { font-family: 'Syne', serif; font-size: 56px; font-weight: 900; color: transparent; -webkit-text-stroke: 1px rgba(201,168,76,0.25); line-height: 1; margin-bottom: 16px; }
+.step-title { font-family: 'Syne', serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
 .step-text { font-size: 14px; color: var(--muted); line-height: 1.75; }
 
 /* Testimonials alias */
@@ -1465,7 +1465,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   background: linear-gradient(145deg, rgba(201,168,76,0.05), var(--black-2));
 }
 @media (max-width: 640px) { .cta-block { padding: 48px 20px; } }
-.cta-block-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 56px); font-weight: 900; color: var(--white); line-height: 1.05; margin-bottom: 16px; }
+.cta-block-title { font-family: 'Syne', serif; font-size: clamp(32px, 5vw, 56px); font-weight: 900; color: var(--white); line-height: 1.05; margin-bottom: 16px; }
 .cta-block-text { font-size: 16px; color: var(--muted); line-height: 1.8; max-width: 580px; margin: 0 auto 36px; }
 .cta-block-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
@@ -1497,10 +1497,10 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .product-body { padding: 22px; }
 .product-category { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
-.product-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; line-height: 1.25; }
+.product-name { font-family: 'Syne', serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; line-height: 1.25; }
 .product-desc { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
 .product-footer { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 14px; border-top: 1px solid var(--border); }
-.product-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 900; color: var(--gold); }
+.product-price { font-family: 'Syne', serif; font-size: 22px; font-weight: 900; color: var(--gold); }
 .product-price-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
 
 /* Featured product */
@@ -1524,7 +1524,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   padding: 6px 14px; border-radius: 4px;
 }
 .fp-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-.fp-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 16px; }
+.fp-title { font-family: 'Syne', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 16px; }
 .fp-desc { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 24px; }
 .fp-includes { margin-bottom: 24px; }
 .fp-includes-title { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
@@ -1532,7 +1532,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .fp-includes li { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
 .fp-includes li::before { content: '✓'; color: var(--gold); font-weight: 700; }
 .fp-price { margin-bottom: 24px; }
-.fp-price-main { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 900; color: var(--gold); }
+.fp-price-main { font-family: 'Syne', serif; font-size: 40px; font-weight: 900; color: var(--gold); }
 .fp-price-note { font-size: 13px; color: var(--muted); margin-top: 4px; }
 .fp-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 .price-old { text-decoration: line-through; color: var(--muted); font-size: 14px; margin-right: 8px; }
@@ -1545,7 +1545,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 @media (max-width: 640px) { .guarantee-inner { padding: 36px 20px; } }
 .guarantee-icon { font-size: 56px; margin-bottom: 20px; }
-.guarantee-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 40px); font-weight: 900; color: var(--white); margin-bottom: 16px; }
+.guarantee-title { font-family: 'Syne', serif; font-size: clamp(28px, 4vw, 40px); font-weight: 900; color: var(--white); margin-bottom: 16px; }
 .guarantee-text { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 32px; }
 
 /* Category tabs fix */
@@ -1637,7 +1637,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   animation: dotPulse 2s ease-in-out infinite;
 }
 .mh-headline {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(48px, 7.5vw, 92px);
   font-weight: 700;
   line-height: 1.0;
@@ -1664,7 +1664,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .mt-item { }
 .mt-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 30px;
   font-weight: 700;
   color: var(--white);
@@ -1714,7 +1714,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   border-top: 1px solid var(--border-gold);
 }
 .mhc-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 26px;
   font-weight: 700;
   color: var(--white);
@@ -1769,7 +1769,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .pain-card:hover { border-color: var(--border-gold); transform: translateY(-4px); }
 .pain-icon { font-size: 32px; margin-bottom: 16px; }
 .pain-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
@@ -1808,7 +1808,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .benefit-body { }
 .benefit-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
@@ -1835,7 +1835,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .how-card:hover { background: var(--black-3); }
 .how-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 60px;
   font-weight: 700;
   color: transparent;
@@ -1844,7 +1844,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   margin-bottom: 16px;
 }
 .how-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
@@ -1874,7 +1874,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .fomo-block .eyebrow { justify-content: center; color: var(--gold); }
 .fomo-block .eyebrow::before, .fomo-block .eyebrow::after { background: var(--gold); }
 .fomo-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: clamp(30px, 4.5vw, 52px);
   font-weight: 700;
   color: #e8dfd2;
@@ -1924,7 +1924,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 }
 .faq-item:hover { border-color: var(--border-gold); }
 .faq-q {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Syne', serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
