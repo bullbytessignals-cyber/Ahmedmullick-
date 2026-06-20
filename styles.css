@@ -659,13 +659,12 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .sa-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 
 .story-quote {
-  font-family: 'EveryRun', serif;
-  font-size: clamp(20px, 3vw, 28px);
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(20px, 3vw, 26px);
   font-weight: 700;
   color: var(--white);
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 24px;
-  font-style: italic;
 }
 .story-quote .highlight { color: var(--gold); }
 
@@ -699,9 +698,9 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 .pillar-card:hover { background: var(--black-3); }
 .pillar-card:hover::after { opacity: 1; }
 .pillar-num {
-  font-family: 'EveryRun', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 64px;
-  font-weight: 900;
+  font-weight: 800;
   color: transparent;
   -webkit-text-stroke: 1px rgba(201,168,76,0.2);
   line-height: 1;
@@ -755,25 +754,36 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   width: 100%; height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 16px;
+  gap: 4px;
   transition: transform 0.5s ease;
+  position: relative;
+}
+.life-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+  pointer-events: none;
 }
 .life-item:hover .life-fill { transform: scale(1.04); }
-.lf-benz { background: linear-gradient(145deg, #FBF5E7, #F1E5C9); }
-.lf-penthouse { background: linear-gradient(145deg, #EEF1FA, #DCE6F4); }
-.lf-pakistan { background: linear-gradient(145deg, #EBF4EB, #D8EBDA); }
-.lf-race { background: linear-gradient(145deg, #FBEDEB, #F4D9D5); }
-.lf-business { background: linear-gradient(145deg, #FBF2E2, #F2E0C2); }
-.life-icon { font-size: 44px; }
+.lf-benz { background: url('images/cars1.png') center/cover no-repeat; }
+.lf-penthouse { background: url('images/cars2.jpg') center/cover no-repeat; }
+.lf-pakistan { background: url('images/ahmad-cars.jpg') center 30%/cover no-repeat; }
+.lf-race { background: url('images/cars2.jpg') center bottom/cover no-repeat; }
+.lf-business { background: url('images/cars1.png') center top/cover no-repeat; }
+.life-icon { font-size: 44px; display: none; }
 .life-label {
   font-family: 'EveryRun', serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  color: var(--gold);
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
-.life-sub { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.life-sub { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.7); position: relative; z-index: 1; }
 .life-overlay {
   position: absolute;
   inset: 0;
@@ -1135,7 +1145,7 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
 /* ─── MOBILE RESPONSIVE ─────────── */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-photo-frame { height: 320px; width: 100%; max-width: 420px; margin: 0 auto; }
+  .hero-photo-frame { height: 420px; width: 100%; max-width: 100%; margin: 0; }
   .story-grid { grid-template-columns: 1fr; }
   .story-visual { height: 300px; }
   .pillars-grid { grid-template-columns: 1fr; }
@@ -1168,7 +1178,8 @@ body.is-intro { overflow: hidden !important; position: fixed; width: 100%; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .hero-stats-row { gap: 24px; flex-wrap: wrap; }
   .hsi-num { font-size: 24px; }
-  .hero-photo-frame { height: 260px; }
+  .hero-photo-frame { height: 380px; }
+  .hero-photo-img { object-position: center 10%; }
 
   /* Ticker */
   .ticker-item { font-size: 11px; padding: 0 20px; }
